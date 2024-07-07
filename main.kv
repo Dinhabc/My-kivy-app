@@ -1,0 +1,45 @@
+<MyGrid>:
+#	Image:
+#		size: 250,250
+#		pos: root.width/2-125,root.height/2-125
+#		id: i1
+#		source : 'abc.jpg'
+	Button:
+		size:500,400
+		pos: root.width/2-250,root.height/2-200
+		disabled : True
+		color: (225,225,225)
+		id: la
+		background_color : (0,225,225,1)
+	Label:
+		text:'ĐĂNG NHẬP'
+		size:500,50
+		pos:root.width/2-250,root.height/2+130
+	Label:
+		text:'Tên TK'
+		size:100,50
+		pos: root.width/2-248,root.height/2+50
+		color: 0,0,0
+	TextInput:
+		size:300,50
+		pos:root.width/2-100,root.height/2+50
+		multiline : False
+		id: ten
+	Label:
+		text:'MK'
+		size:100,50
+		pos: root.width/2-240,root.height/2-50
+		color: 0,0,0
+	TextInput:
+		size:300,50
+		pos:root.width/2-100,root.height/2-50
+		multiline : False
+		
+		id : mk
+	Button:
+		size:200,70
+		pos:root.width/2-100,root.height/2-200
+		text: 'XÁC NHẬN'
+		background_color: (225,0,0)
+		on_press: root.check()
+		
